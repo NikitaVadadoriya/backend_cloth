@@ -63,7 +63,7 @@ app.use('/api/add',addressRouter);
 const orderRoute = require('./Routes/orderRouter')
 app.use('/api/order',orderRoute);
 
-
-app.listen(process.env.PORT,()=>{
+const PORT =process.env.PORT || 5000
+app.listen(PORT,()=>{
     console.log(`App is running port 4000`);
 })
